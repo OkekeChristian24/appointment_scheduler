@@ -81,7 +81,7 @@ function fetchAppointments(){
         var importance = appmnts[i].importance;
         var status = appmnts[i].status;
         
-        appmntsList.innerHTML += '<div class="card card-body bg-light" style="width:60%;">' +
+        appmntsList.innerHTML += '<div class="card card-body bg-light">' +
                                  '<h6>Appointment ID: ' + id + '</h6>' +
                                  '<p><span class="badge badge-primary">' + status+'</span></p>' + 
                                  '<h6>Subject: ' + subject + '</h6>' + 

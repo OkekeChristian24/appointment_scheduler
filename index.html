@@ -6,26 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="./style.css" />
   
     <title>Your Appointment Scheduler</title>
-    <style>
-        label{
-            color: darkgreen;
-            font-weight: 500;
-        } 
-        a:hover{
-            text-decoration: none;
-        }
-        
-        @media screen and (max-width: 760px){
-            small{
-                display: block;
-            }
-        }
-    </style>
+    
   </head>
-<body onload="fetchAppointments()">
+<body id="bodyTag" onload="fetchAppointments()">
     
     <div class="container">
         <h3 style="color: green;">Your Appointment Scheduler <small><a style="color: darkorange;"href="https://okekechristian.com/">by OkekeChristian.com</a></small></h3>
@@ -66,7 +52,7 @@
             </form>
         </div>
         
-        <div class="col-sm-12">
+        <div id="list-container" class="col-sm-12">
             <div id="appmntsList">
             
             </div>
